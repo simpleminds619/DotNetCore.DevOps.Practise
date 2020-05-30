@@ -31,7 +31,7 @@ jobs:
       uses: docker/build-push-action@v1.1.0
       with:
         username: simpleminds
-        password: Dinesh@619
+        password: dinesh619
         repository: simpleminds/dotnetcore-workspace
         path: .
         dockerfile: ./Dockerfile
