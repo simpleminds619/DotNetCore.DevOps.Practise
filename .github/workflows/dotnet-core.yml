@@ -27,13 +27,3 @@ jobs:
       run: dotnet build --configuration Release --no-restore -o ./atrifacts
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-    - name: Build and push Docker images
-      uses: docker/build-push-action@v1.1.0
-      with:
-        username: simpleminds
-        password: dinesh619
-        repository: simpleminds/dotnetcore-workspace
-        path: .
-        dockerfile: ./Dockerfile
-        always_pull: true
-        push: true
