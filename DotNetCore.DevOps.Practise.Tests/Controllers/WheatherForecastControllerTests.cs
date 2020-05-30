@@ -16,7 +16,7 @@ namespace DotNetCore.DevOps.Practise.Tests.Controllers
 
             var result = controller.Get();
 
-            Assert.Null(result);
+            Assert.NotNull(result);
         }
     }
 }
